@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.todo-item{
+    padding: 20px;
+    background-color: #222;
+    margin: 50px 100px 40px 50px;
+    width: 45%;
+}
+
+.todo-item div{
+    margin-bottom: 15px;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+header h1{
+    margin-left: 40px;
+}
+
+
+form{
+    float: right;
+    margin-right: 300px;
+    margin-top: 110px;
+}
+
+
+form input {
+    padding: 20px;
+    background-color: #222;
+    color: aliceblue;
+    outline: 0;
+    border: 0;
+}
+
+form button {
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-left: 20px;
+    outline: 0;
+    border: 0;
+    transition: transform 500ms ease;
+}
+
+form button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+
+.icon {
+    position: relative;
+    top: 3px;
+}
+
+.icon-buttons{
+    float: right;
+}
+
+.icon-buttons svg{
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+.icon-complete{
+    color: chartreuse;
+}
+
+.icon-delete{
+    color:crimson
+}
+
+.icon-buttons svg:hover{
+    transform: scale(1.2);
+}
+
+.todo-header {
+    margin-left: 50px;
+}

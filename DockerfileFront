@@ -1,0 +1,15 @@
+FROM node:18-alpine3.17
+RUN mkdir "frontend"
+WORKDIR /frontend
+
+COPY /frontend/package.json .
+
+RUN npm install
+
+COPY ./frontend .
+
+EXPOSE 3000
+
+RUN npm run build
+
+CMD ["npm", "start"]

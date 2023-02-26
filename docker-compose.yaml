@@ -1,0 +1,13 @@
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+    expose:
+      - 8000
+    command: "python manage.py runserver 0.0.0.0:8000"
+  
+  frontend:
+    build:
+      dockerfile: DockerfileFront
+    ports:
+      - '3000:3000'
